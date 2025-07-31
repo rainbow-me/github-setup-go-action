@@ -35,7 +35,7 @@ runs:
           ~/.cache/go-build
         key: ${{ runner.os }}-gocache-${{ inputs.cache-key }}-${{ hashFiles(inputs.cache-dependency-path) }}
         restore-keys: |
-          ${{ runner.os }}-gocache--${{ inputs.cache-key }}
+          ${{ runner.os }}-gocache-${{ inputs.cache-key }}
 
     - name: Private repo support
       if: ${{ inputs.personal-access-token != '' }}
