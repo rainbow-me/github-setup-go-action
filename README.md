@@ -13,10 +13,10 @@ Use after checkout, so it can detect the `go.sum` file.
 
 ```yaml
 steps:
-  - uses: actions/checkout@v4
+  - uses: actions/checkout@v5
 
   - name: Setup Go
-    uses: rainbow-me/github-setup-go-action@v2
+    uses: rainbow-me/github-setup-go-action@v3
     with:
       cache-key: test
 ```
